@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_marginHorizontal="@dimen/_12ssp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:layout_centerVertical="true"
+            android:paddingVertical="@dimen/_4sdp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:background="@drawable/circle_shape_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_toRightOf="@id/img_back"
+            android:text="@string/your_earning"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/reboto_bold"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_toRightOf="@id/img_back"
+        android:text="@string/select_date_range"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp">
+        <RelativeLayout
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_date_box">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/start"
+                android:textColor="@color/gray_"/>
+
+            <TextView
+                android:id="@+id/tv_startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:text="@string/start"
+                android:textColor="@color/gray_"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_date_box">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/end"
+                android:textColor="@color/gray_"/>
+            <TextView
+                android:id="@+id/tv_enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:text="@string/start"
+                android:textColor="@color/gray_"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_showOtherDates="all"
+        app:mcv_calendarMode="month"
+        app:mcv_selectionMode="range"
+        app:mcv_selectionColor="@color/theme"/>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:gravity="center"
+            android:textColor="@color/gray_"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/reboto_bold"
+            android:background="@drawable/shape_btn_cancel"
+            android:text="@string/cancel"/>
+        <TextView
+            android:id="@+id/apply"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:fontFamily="@font/reboto_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_btn_apply"
+            android:text="@string/apply"/>
+
+    </RelativeLayout>
+</RelativeLayout>

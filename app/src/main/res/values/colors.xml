@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme">#632DF8</color>
+    <color name="booking">#76E5F3</color>
+    <color name="e6e5e5">#E6E5E5</color>
+    <color name="gray">#C5C2C2</color>
+    <color name="gray_">#B8B1B1</color>
+    <color name="e7e7e7">#E7E7E7</color>
+    <color name="_5527d7">#5527D7</color>
+
+</resources>
